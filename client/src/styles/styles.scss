@@ -2,6 +2,7 @@ $blue: #00ADEE;
 $white: rgb(255, 255, 255);
 $gray: rgb(136, 136, 136);
 $drkGray: rgb(102, 102, 102);
+$orange: rgb(255, 140, 0);
 
 
 @mixin flexAlign() {
@@ -42,6 +43,23 @@ $drkGray: rgb(102, 102, 102);
 
     &-right {
       @include flexAlign;
+
+      button {
+        margin-right: 16px;
+      }
+
+      .sign-up-btn {
+        @include flexAlign;
+        height: 30px;
+        justify-content: center;
+        text-align: center;
+        border-radius: 24px;
+        background-color: $orange;
+
+        &:hover {
+          background-color: rgb(224, 123, 0);
+        }
+      }
     }
 
     &-link {
