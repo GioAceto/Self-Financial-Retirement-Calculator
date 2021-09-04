@@ -1,7 +1,6 @@
 import React from 'react';
 import { Line, Scatter } from 'react-chartjs-2';
 import { Card, Button } from 'react-bootstrap'
-import '../App.css'
 
 export default function LineChart(props) {
   if (props.data.length === 0) {

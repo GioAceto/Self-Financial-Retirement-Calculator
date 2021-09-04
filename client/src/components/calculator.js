@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import Calculation from '../utils/calculator'
-import "../App.css"
 import CheckContribution from './check-contribution'
 
 const Calculator = (props) => {

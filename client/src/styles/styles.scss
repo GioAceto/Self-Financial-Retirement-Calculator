@@ -3,6 +3,7 @@ $white: rgb(255, 255, 255);
 $gray: rgb(136, 136, 136);
 $drkGray: rgb(102, 102, 102);
 $orange: rgb(255, 140, 0);
+$silver: #F7F7F7;
 
 
 @mixin flexAlign() {
@@ -202,3 +203,132 @@ $orange: rgb(255, 140, 0);
       }
     }
   }
+
+  //Card container
+
+.card-container {
+  height: 30rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: $silver;
+}
+
+.line {
+justify-content: flex-end;
+width: 20px;
+height: 20px;
+}
+
+.graph {
+    width: 55rem;
+    height: 50%;
+    align-self: flex-start;
+    background-color: white;
+}
+
+.content {
+    min-width: 1500px;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5rem;
+}
+
+.input-container {
+    padding: 2rem;
+    width: 20rem;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(255, 140, 0);
+    box-shadow: 5px 10px 10px gray;
+    border-radius: 25px;
+}
+
+.input-container input {
+    margin-bottom: 0.5rem;
+    padding: 0.1rem 0.5rem;
+    width: 8rem;
+    height: 1.7rem;
+    border: none;
+    border-radius: 8px;
+    color: black;
+    font-size: 1rem;
+    font-weight: 200;
+}
+
+.input-container h4 {
+    margin: 0.8rem 0;
+    font-size: 1rem;
+    letter-spacing: 0.1rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    color: white;
+}
+
+.input-container button {
+    margin: 1rem 0;
+    padding: 0.5rem;
+    width: 9rem;
+    font-size: 1.1rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    color: #00ADEE;
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 8px;
+}
+.report {
+    font-family: 'Montserrat', sans-serif;
+    text-align:center;
+    font-weight: 200;
+
+}
+.bg-dark {
+    padding: 2rem;
+    width: 300px;
+    height: 240px;
+    display: flex;
+    flex-direction: column;
+    background-color: $white;
+    box-shadow: 5px 1px 20px gray;
+    border-radius: 24px;
+    display: flex;
+    color: $drkGray;
+    font-family: Montserrat;
+    font-size: 1.3rem;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #00ADEE;
+    transition: transform .2s;
+}
+
+.box :hover {
+    transform: scale(1.5);
+}
+
+.top-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+}
+
+.calc-container {
+    width: auto;
+    height: 100%;
+}
+
+.right-container {
+    width: 60%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

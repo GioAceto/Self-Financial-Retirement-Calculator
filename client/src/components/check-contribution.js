@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react'
-import "../App.css"
 import Card1 from './card1'
 
 const CheckContribution = (props) => {
