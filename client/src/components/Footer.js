@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 
 function Footer() {
   return (
@@ -30,7 +30,18 @@ function Footer() {
           <button>Join Self</button>
           <button>Log in</button>
           <div className="social-container">
-
+            <button>
+              <img src="../images/twitter.svg" alt="Twitter"></img>
+            </button>
+            <button>
+              <img src="../images/facebook.svg" alt="Facebook"></img>
+            </button>
+            <button>
+              <img src="../images/instagram.svg" alt="Instagram"></img>
+            </button>
+            <button>
+              <img src="../images/Linkedin.svg" alt="Linkedin"></img>
+            </button>
           </div>
         </div>
         <div className="terms">

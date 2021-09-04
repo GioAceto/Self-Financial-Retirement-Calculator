@@ -205,8 +205,20 @@
 }
 
 .footer-container .footer .social-container {
+  margin-bottom: 20px;
   height: 50px;
-  width: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer-container .footer .social-container button {
+  margin-right: 24px;
+}
+
+.footer-container .footer .social-container button img {
+  height: 32px;
+  width: 32px;
 }
 
 .footer-container .footer .terms {
