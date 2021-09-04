@@ -34,11 +34,13 @@ function Footer() {
           </div>
         </div>
         <div className="terms">
-          <p>
+          <p className="large-links-container">
             <button>&copy; Self Financial, Inc.</button>
+            <br />
             <button>Privacy</button>&nbsp;|&nbsp;
             <button>Terms</button>&nbsp;|&nbsp;
-            <button>Compliance</button>&nbsp;|
+            <button>Compliance</button>&nbsp;|&nbsp;
+            <br />
             <button>Card Agreements</button>
           </p>
           <p>

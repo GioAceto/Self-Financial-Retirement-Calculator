@@ -22,8 +22,8 @@ $drkGray: rgb(102, 102, 102);
   .nav {
     @include flexAlign;
     margin: 0 auto;
-    width: 60%;
-    max-width: 950px;
+    width: 930px;
+    max-width: 930px;
     height: 66px;
     justify-content: space-between;
     background-color: $blue;
@@ -70,14 +70,20 @@ $drkGray: rgb(102, 102, 102);
   }
 }
 
+//Footer component
+
   .footer-container {
     display: flex;
     justify-content: center;
 
     .footer {
+      width: 930px;
+      max-width: 930px;
       padding: 20px 15px;
       display: flex;
       justify-content: space-between;
+      line-height: 1.4;
+      -webkit-font-smoothing: antialiased;
 
       button {
         margin-top: 13px;
@@ -119,6 +125,19 @@ $drkGray: rgb(102, 102, 102);
         flex-direction: column;
         align-items: flex-start;
 
+        button {
+          margin: 0 0 9px 0;
+          padding: 0;
+          font-size: 16px;
+          color: $drkGray;
+          font-weight: bold;
+          transition: all 0.2s linear 0s;
+
+          &:hover {
+            color: black;
+          }
+        }
+
         &-container {
           height: 50px;
           width: 300px;
@@ -131,7 +150,24 @@ $drkGray: rgb(102, 102, 102);
         flex-direction: column;
         align-items: flex-start;
 
+        .large-links-container {
+          margin-bottom: 10px;
+          font-size: 16px;
+          white-space: nowrap;
+
+          button {
+            font-size: 16px;
+            transition: none;
+
+            &:hover {
+              font-weight: bold;
+              color: $gray;
+            }
+          }
+        }
+
         p {
+          margin-bottom: 10px;
           font-size: 10px;
           color: $gray;
         }
