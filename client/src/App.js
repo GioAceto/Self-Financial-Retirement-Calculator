@@ -1,4 +1,5 @@
 import './App.css';
+import './styles/styles.scss';
 import Calculator from './components/calculator'
 import CheckContribution from './components/check-contribution';
 import Card1 from './components/card1'
@@ -7,7 +8,7 @@ import Card3 from './components/card3'
 
 import React, { useState } from 'react'
 import { Line } from 'react-chartjs-2'
-import { Header, Footer } from './components/common'
+import Navbar from './components/Navbar'
 
 import LineChart from './components/LineChart';
 
@@ -17,7 +18,7 @@ function App() {
 
   return (
     <>
-      <Header />
+      <Navbar />
       <div className="top-container">
         <div className="calc-container">
           <Calculator setterFunction={setGraphData} setCheckCont={setCheckCont} />
@@ -35,7 +36,6 @@ function App() {
           }
         </div>
       </div>
-      <Footer />
     </>
   );
 }
