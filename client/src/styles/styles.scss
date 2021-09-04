@@ -1,6 +1,8 @@
 $blue: #00ADEE;
 $white: rgb(255, 255, 255);
 $gray: rgb(136, 136, 136);
+$drkGray: rgb(102, 102, 102);
+
 
 @mixin flexAlign() {
   display: flex;
@@ -10,6 +12,7 @@ $gray: rgb(136, 136, 136);
 * {
   margin: 0;
   padding: 0;
+  font-family: montserrat, sans-serif;
 }
 
 #nav-container {
@@ -48,7 +51,6 @@ $gray: rgb(136, 136, 136);
       background: none;
       border: none;
       text-decoration: none;
-      font-family: montserrat, sans-serif;
       font-size: 10px;
       font-weight: bold;
       text-transform: uppercase;
@@ -67,3 +69,72 @@ $gray: rgb(136, 136, 136);
 
   }
 }
+
+  .footer-container {
+    display: flex;
+    justify-content: center;
+
+    .footer {
+      padding: 20px 15px;
+      display: flex;
+      justify-content: space-between;
+
+      button {
+        margin-top: 13px;
+        background: none;
+        text-decoration: none;
+        border: none;
+        color: $gray;
+        font-size: 12px;
+        transition: all 0.2s linear 0s;
+
+        &:hover {
+          cursor: pointer;
+          color: black;
+        }
+      }
+
+      h3 {
+        text-transform: uppercase;
+        color: $drkGray;
+        font-size: 12px;
+        font-weight: bold;
+        letter-spacing: 1px;
+      }
+
+      .learn-more {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .about {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .social {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        &-container {
+          height: 50px;
+          width: 300px;
+        }
+      }
+
+      .terms {
+        max-width: 290px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        p {
+          font-size: 10px;
+          color: $gray;
+        }
+      }
+    }
+  }
