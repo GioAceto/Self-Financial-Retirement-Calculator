@@ -9,6 +9,7 @@ import Card3 from './components/card3'
 import React, { useState } from 'react'
 import { Line } from 'react-chartjs-2'
 import Navbar from './components/Navbar'
+import Footer from './components/Footer'
 
 import LineChart from './components/LineChart';
 
@@ -36,6 +37,7 @@ function App() {
           }
         </div>
       </div>
+      <Footer />
     </>
   );
 }
