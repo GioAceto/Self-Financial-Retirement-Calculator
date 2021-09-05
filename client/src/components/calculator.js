@@ -46,11 +46,11 @@ const Calculator = (props) => {
           <h4>Current Age</h4>
           <input value={currentYear.currentAge} onChange={(event) => { setCurrentYear({ ...currentYear, currentAge: event.target.value }) }}></input>
           <h4>Current Salary</h4>
-          <input value={currentYear.currentSalary} onChange={(event) => { setCurrentYear({ ...currentYear, currentSalary: event.target.value }) }}></input>
+          &#36;<input value={currentYear.currentSalary} onChange={(event) => { setCurrentYear({ ...currentYear, currentSalary: event.target.value }) }}></input>
           <h4>Contribution Percent of Income</h4>
           <input value={calculationProperties.contributionPercentOfIncome} onChange={(event) => { setCalculationProperties({ ...calculationProperties, contributionPercentOfIncome: event.target.value }) }}></input>&nbsp;&#37;
           <h4>Current Retirement Savings</h4>
-          <input value={currentYear.currentRetirementSavings} onChange={(event) => { setCurrentYear({ ...currentYear, currentRetirementSavings: event.target.value }) }}></input>
+          &#36;<input value={currentYear.currentRetirementSavings} onChange={(event) => { setCurrentYear({ ...currentYear, currentRetirementSavings: event.target.value }) }}></input>
         </div>
         <div className="input-container-right">
           <h4>Expected Retirement Age</h4>
@@ -58,7 +58,7 @@ const Calculator = (props) => {
           <h4>Life Expectancy</h4>
           <input value={calculationProperties.lifeExpectancy} onChange={(event) => { setCalculationProperties({ ...calculationProperties, lifeExpectancy: event.target.value }) }}></input>
           <h4>Expected Monthly Expenses in Retirement</h4>
-          <input value={calculationProperties.expenses} onChange={(event) => { setCalculationProperties({ ...calculationProperties, expenses: event.target.value }) }}></input>
+          &#36;<input value={calculationProperties.expenses} onChange={(event) => { setCalculationProperties({ ...calculationProperties, expenses: event.target.value }) }}></input>
           <button type="button" onClick={calculate}>Calculate</button>
         </div>
       </div>
