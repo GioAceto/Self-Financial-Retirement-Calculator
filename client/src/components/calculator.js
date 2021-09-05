@@ -6,9 +6,9 @@ const Calculator = (props) => {
 
   let defaultCalculationProperties = {
     retirementAge: 67,
-    contributionPercentOfIncome: 0.10,
+    contributionPercentOfIncome: 10,
     investmentAnnualReturn: 1.105,
-    lifeExpectancy: 90,
+    lifeExpectancy: 87,
     expectedAnnualIncomeIncreasePercent: 1.02,
     newAnnualReturnPercentInRetirement: 1.025,
     inflationRate: 0.0181,
@@ -38,7 +38,6 @@ const Calculator = (props) => {
     console.log(fullData)
   }
 
-
   return (
     <div className="container">
       <h2>Are you meeting your retirement goals?</h2>
@@ -49,7 +48,7 @@ const Calculator = (props) => {
           <h4>Current Salary</h4>
           <input value={currentYear.currentSalary} onChange={(event) => { setCurrentYear({ ...currentYear, currentSalary: event.target.value }) }}></input>
           <h4>Contribution Percent of Income</h4>
-          <input value={calculationProperties.contributionPercentOfIncome} onChange={(event) => { setCalculationProperties({ ...calculationProperties, contributionPercentOfIncome: event.target.value }) }}></input>
+          <input value={calculationProperties.contributionPercentOfIncome} onChange={(event) => { setCalculationProperties({ ...calculationProperties, contributionPercentOfIncome: event.target.value }) }}></input>&nbsp;&#37;
           <h4>Current Retirement Savings</h4>
           <input value={currentYear.currentRetirementSavings} onChange={(event) => { setCurrentYear({ ...currentYear, currentRetirementSavings: event.target.value }) }}></input>
         </div>
