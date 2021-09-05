@@ -41,7 +41,7 @@ const Calculator = (props) => {
 
   return (
     <div className="container">
-      <h2>How much retirement savings will I have at age </h2>
+      <h2>Are you meeting your retirement goals?</h2>
       <div className="input-container">
         <div className="input-container-left">
           <h4>Current Age</h4>
