@@ -18,12 +18,14 @@ function App() {
     <>
       <Navbar />
       <div className="top-container">
-        <div className="calc-container">
-          <Calculator setterFunction={setGraphData} setCheckCont={setCheckCont} />
-        </div>
-        <div className="right-container">
-          <div className="graph-container">
-            <LineChart className="line" data={graphData} />
+        <div className="top-container-box">
+          <div className="calc-container">
+            <Calculator setterFunction={setGraphData} setCheckCont={setCheckCont} />
+          </div>
+          <div className="right-container">
+            <div className="graph-container">
+              <LineChart className="line" data={graphData} />
+            </div>
           </div>
         </div>
       </div>

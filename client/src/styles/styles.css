@@ -280,8 +280,7 @@
 }
 
 .graph {
-  width: 55rem;
-  height: 50%;
+  width: 40rem;
   -ms-flex-item-align: start;
       align-self: flex-start;
   background-color: white;
@@ -302,10 +301,7 @@
   padding: 5rem;
 }
 
-.input-container {
-  padding: 2rem;
-  width: 20rem;
-  height: 100%;
+.container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -313,34 +309,50 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background-color: darkorange;
-  -webkit-box-shadow: 5px 10px 10px gray;
-          box-shadow: 5px 10px 10px gray;
-  border-radius: 25px;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
 }
 
-.input-container input {
+.container h2 {
+  margin-bottom: 4rem;
+  color: #666666;
+}
+
+.container .input-container {
+  width: auto;
+  height: 25rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.container .input-container-left {
+  margin-right: 6rem;
+}
+
+.container .input-container input {
   margin-bottom: 0.5rem;
   padding: 0.1rem 0.5rem;
   width: 8rem;
   height: 1.7rem;
   border: none;
-  border-radius: 8px;
+  border-bottom: 1px solid #666666;
+  background: none;
   color: black;
   font-size: 1rem;
   font-weight: 200;
 }
 
-.input-container h4 {
+.container .input-container h4 {
   margin: 0.8rem 0;
   font-size: 1rem;
   letter-spacing: 0.1rem;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: bold;
-  color: white;
+  color: #666666;
+  font-weight: 400;
 }
 
-.input-container button {
+.container .input-container button {
   margin: 1rem 0;
   padding: 0.5rem;
   width: 9rem;
@@ -351,6 +363,11 @@
   background-color: white;
   border: 1px solid white;
   border-radius: 8px;
+  display: block;
+}
+
+.container .input-container button:hover {
+  cursor: pointer;
 }
 
 .report {
@@ -404,16 +421,44 @@
 }
 
 .top-container {
-  width: 100%;
-  height: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 40rem;
+  background-color: white;
+}
+
+.top-container-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto;
+  width: 95%;
+  height: 95%;
+  border-radius: 24px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: white;
+  -webkit-box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
 }
 
 .calc-container {
-  width: auto;
-  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 3rem;
 }
 
 .right-container {
