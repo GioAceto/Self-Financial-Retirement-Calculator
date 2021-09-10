@@ -221,9 +221,32 @@ height: 20px;
 }
 
 .graph {
-    width: 40rem;
+    width: 45rem;
     align-self: flex-start;
     background-color: white;
+    display: flex;
+
+    &-inner-container {
+      width: 600px;
+      display: flex;
+      flex-direction: column;
+
+      .x-title {
+        margin: 0.5rem 0;
+        text-align: center;
+      }
+    }
+
+    .y-title {
+      margin: 0 0.5rem;
+      align-self: center;
+      white-space: nowrap;
+    }
+
+    h4 {
+      font-size: 12px;
+      font-weight: 400;
+    }
 }
 
 .content {

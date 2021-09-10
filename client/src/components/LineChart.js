@@ -38,13 +38,18 @@ export default function LineChart(props) {
           }
         },
 
+
       }]
 
   };
   return (
     <div className="graph">
-      <h1 className='report'>Your Retirement Savings</h1>
-      <Line data={data} />
+      <h4 className="y-title">Savings $</h4>
+      <div className="graph-inner-container">
+        <h1 className='report'>Your Retirement Savings</h1>
+        <Line data={data} />
+        <h4 className="x-title">Age</h4>
+      </div>
     </div>
   );
 }
