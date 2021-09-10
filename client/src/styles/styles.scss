@@ -225,6 +225,7 @@ height: 20px;
     align-self: flex-start;
     background-color: white;
     display: flex;
+    color: $drkGray;
 
     &-inner-container {
       width: 600px;
@@ -262,6 +263,7 @@ height: 20px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  color: $drkGray;
 
   h2 {
     margin-bottom: 4rem;
