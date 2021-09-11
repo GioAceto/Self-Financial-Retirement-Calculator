@@ -280,10 +280,43 @@
 }
 
 .graph {
-  width: 40rem;
+  width: 45rem;
   -ms-flex-item-align: start;
       align-self: flex-start;
   background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #666666;
+}
+
+.graph-inner-container {
+  width: 600px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.graph-inner-container .x-title {
+  margin: 0.5rem 0;
+  text-align: center;
+}
+
+.graph .y-title {
+  margin: 0 0.5rem;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  white-space: nowrap;
+}
+
+.graph h4 {
+  font-size: 12px;
+  font-weight: 400;
 }
 
 .content {
@@ -312,6 +345,7 @@
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
+  color: #666666;
 }
 
 .container h2 {

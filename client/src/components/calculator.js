@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import Calculation from '../utils/calculator'
-import CheckContribution from './check-contribution'
 
 const Calculator = (props) => {
 
@@ -24,7 +23,6 @@ const Calculator = (props) => {
     returnFromInterest: 0
   }
   let setGraphData = props.setterFunction
-  let setCheckCont = props.setCheckCont
   let [calculationProperties, setCalculationProperties] = useState(defaultCalculationProperties)
   let [currentYear, setCurrentYear] = useState(defaultCurrentYear)
 
@@ -34,7 +32,6 @@ const Calculator = (props) => {
     const fullData = Calculation(calculationProperties, currentYear)
     setSavingsData(fullData)
     setGraphData(fullData)
-    setCheckCont(calculationProperties.contributionPercentOfIncome)
     console.log(fullData)
   }
 
