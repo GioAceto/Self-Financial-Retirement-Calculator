@@ -20,14 +20,14 @@ The values provided by the user in the input sets the values of key variables th
 - Current Age
 - Current Salary
 - Contribution Percent of Income
-- Current Retirement savings
+- Current Retirement Savings
 - Expected Retirement Age
 - Life Expectancy
 - Expected Monthly Expenses in Retirement
 
 #### The Chart
 
-When the user presses the "Calculate" button, the provided inputs are assigned to variables which are passed to a javascript function. For every year, a data point is added to the graph which represents the user's projected retirement savings at that time.
+When the user presses the "Calculate" button, the provided inputs are assigned to variables which are passed to a JavaScript function. For every year, a data point is added to the graph which represents the user's projected retirement savings at that time.
 
 ![Screenshot of retirement calculator](client/public/images/readme-graph.png)
 
