@@ -20,7 +20,7 @@ The values provided by the user in the input sets the values of key variables th
 - Current Age
 - Current Salary
 - Contribution Percent of Income
-- Current Retirement avings
+- Current Retirement savings
 - Expected Retirement Age
 - Life Expectancy
 - Expected Monthly Expenses in Retirement
@@ -37,4 +37,3 @@ When the user presses the "Calculate" button, the provided inputs are assigned t
 - React.js
 - Chart.js
 - SCSS
-
