@@ -37,3 +37,5 @@ When the user presses the "Calculate" button, the provided inputs are assigned t
 - React.js
 - Chart.js
 - SCSS
+
+#### Note: All images bearing the Self Financial Inc logo are intellectual property of Self Inc and not owned by me. This project is showcased with approval by Self Financial Inc.
