@@ -38,4 +38,4 @@ When the user presses the "Calculate" button, the provided inputs are assigned t
 - Chart.js
 - SCSS
 
-#### Note: All images bearing the Self Financial Inc logo are intellectual property of Self Inc and not owned by me. This project is showcased with approval by Self Financial Inc.
+#### Note: All images bearing the Self Financial Inc logo are trademarked and not owned by me. This project is showcased with approval from Self Financial Inc.
