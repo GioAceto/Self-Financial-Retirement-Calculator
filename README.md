@@ -1,41 +1,88 @@
-# Industry Project - Retirement Calculator
+# Student-Directory
+
+### [Demo this application](https://student-directory-app.herokuapp.com/)
 
 ## Objective
+The objective of this project was to create a full CRUD REST API for a student directory, as well as a frontend to render the information.
 
-The objective of this project was to create a retirement calculator application for Self Financial Inc., a Fintech company based out of Austin TX that specializes in providing credit building tools and financial services to its customers.
+## Structure & Functionality
+This API utilizes a MySQL database to store the student information, as well as a Pug frontend for the rendering.
 
-#### Technical Requirements:
+The database contains a single table with 10 columns (id, name, age, address, gpa, major, image, createdAt, updatedAt, & deletedAt). The application uses the Sequelize ORM to connect to the database and it is then parsed into JSON format.
 
-- Take in at least five user inputs
-- Display retirement savings with a graph visualization
-- Utilize version control to merge team member branches
-- Design needed to fit client's existing style
+The frontend of the application utilizes the Pug template-engine as well SCSS for styling. All images used are svgs saved within the assets folder of the repo.
 
-## Functionality
+![Screen Capture GIF of student directory](public/assets/screen-capture.gif)
 
-#### The Input Form:
+## API Documentation
 
-The values provided by the user in the input sets the values of key variables that are used to calculate the user's retirement savings and output those savings on the chart. The form requires the following user inpits:
+The following HTTP methods are implemented: GET, POST, PUT, DELETE.
 
-- Current Age
-- Current Salary
-- Contribution Percent of Income
-- Current Retirement Savings
-- Expected Retirement Age
-- Life Expectancy
-- Expected Monthly Expenses in Retirement
+#### GET METHOD
 
-#### The Chart
+http://localhost:1800/api/students
 
-When the user presses the "Calculate" button, the provided inputs are assigned to variables which are passed to a JavaScript function. For every year, a data point is added to the graph which represents the user's projected retirement savings at that time.
+GET - Returns a list in raw JSON of all of the students and their information currently in the database.
 
-![Screenshot of retirement calculator](client/public/images/readme-graph.png)
+    {
+        "id": 1,
+        "name": "Emily",
+        "age": 20,
+        "address": "Salem, MA",
+        "gpa": "3.70",
+        "major": "Biochemistry",
+        "image": "emily.svg",
+        "createdAt": "2021-09-28T17:23:44.000Z",
+        "updatedAt": "2021-09-28T17:23:44.000Z",
+        "deletedAt": null
+    },
 
+#### POST METHOD
 
-## Included Technologies
+http://localhost:1800/api/students
 
-- React.js
-- Chart.js
-- SCSS
+POST - Adds a new student to the database. A new Student ID is created in sequential order.
 
-#### Note: All images bearing the Self Financial Inc logo are trademarked and not owned by me. This project is showcased with approval from Self Financial Inc.
+    {
+        "id": 13,
+        "name": "Robert",
+        "age": 23,
+        "address": "Miami, FL",
+        "gpa": 3.2,
+        "major": "Chemistry",
+        "image": "robert.svg",
+        "createdAt": "2021-09-28T17:23:44.000Z",
+        "updatedAt": "2021-09-28T18:09:56.885Z",
+        "deletedAt": null
+    }
+
+#### UPDATE METHOD
+
+http://localhost:1800/api/students/000001
+
+UPDATE - Updates a student currently in the databse based on the Student ID # being used as the param.
+
+All of these properties are required to update: name, age, address, gpa, major, & image.
+
+      {
+      "id": 1,
+      "name": "Emily",
+      "age": 21,
+      "address": "Salem, MA",
+      "gpa": 3.8,
+      "major": "Biochemistry",
+      "image": "emily.svg",
+      "createdAt": "2021-09-28T17:23:44.000Z",
+      "updatedAt": "2021-09-28T18:09:56.885Z",
+      "deletedAt": null
+  }
+
+#### DELETE METHOD
+
+http://localhost:1800/api/students/000001
+
+DELETE - Deletes a student currently in the databse by Student ID # (which is the param). The id # works both with or without leading zeros when used as the param.
+
+## To View the Front End Locally
+
+http://localhost:1800/
