@@ -1,5 +1,7 @@
 # Industry Project - Retirement Calculator
 
+### [Demo this application](https://self-financial-retirement-calculator.netlify.app/)
+
 ## Objective
 
 The objective of this project was to create a retirement calculator application for Self Financial Inc., a Fintech company based out of Austin TX that specializes in providing credit building tools and financial services to its customers.
